@@ -1,12 +1,213 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro"
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
+import MainButton from "../components/MainButton.astro";
+import ButtonWithModal from "../components/ButtonWithModal.astro";
+import FAQ from "../components/FAQ.astro";
+import HomeDescription from "../components/HomeDescription.astro";
 ---
-<BaseLayout>
-	<div style="display: flex; flex-direction: column; align-items: center;">
-		<img style="max-width: 100vw;" src="teaser.png" alt="teaser" />
-		<a href="https://flasta2025.holoprofansph.org">
-			Looking for 2025?
-		</a>
-	</div>
-</BaseLayout>
 
+<BaseLayout>
+    <div class="content">
+        <div class="standardDiv">
+            <!--<div class="tagline">
+                <span id="front">A Digital Billboard Campaign dedicated to Nanashi Mumei</span>
+                <span id="back">A Digital Billboard Campaign dedicated to Nanashi Mumei</span>
+            </div>-->
+            <img
+                class="logoImg"
+                id="logoImgMobile"
+                src="/img/2026-flasta-logo-on-light-v3.webp"
+                alt=""
+            />
+            <img
+                class="logoImg"
+                id="logoImgDesktop"
+                src="/img/2026-flasta-logo-on-light-v3.webp"
+                alt=""
+            />
+
+            <HomeDescription />
+        </div>
+        <div class="standardDiv">
+            <!--<Card main>
+                <div class="cardHeader" style="justify-content: center">
+                <span class="cardTitle">Thank you!</span>
+                </div>
+                <img id="mainPhoto" src="/img/2025-flasta-final.webp" alt="HoloFlasta 2025 at Cosplay Mania 2025"/>
+                    <img id="mainPhoto" src="/img/2025-flasta-meetup.webp" alt="HoloFlasta 2025 standees at HoloMEETUP Cosplay Mania 2025"/>
+                    <p>
+                    <b>Thank you for making this happen, see you next time!</b>
+                <br/><br/>
+                </p>
+            </Card>-->
+            <div class="buttonRow">
+                <!--<MainButton link="https://forms.gle/bEHjHFqBSTtTAvY6A" img="art.svg" text="Contribute Artworks"/>-->
+                <MainButton
+                    link="https://forms.gle/5yNddAVcjRPXaQ9e8"
+                    img="ph.svg"
+                    text="Donate Locally (PH)"
+                />
+                <ButtonWithModal />
+            </div>
+            <!--<Card main text={
+                <Fragment>
+                <div class="cardHeader" style={{justifyContent: "center"}}>
+                <span class="cardTitle">Artists</span>
+                    </div>
+                    <div class="artistList">
+                    <a class="artistItem" href="https://twitter.com/soulless009">
+                    <img height="32px" src="/svg/trex.svg" alt="Jurard"/>
+                    <div class="artistInfo"><span class="artistName">Soulless Sanctuary</span><span>@soulless009</span></div>
+                </a>
+                <a class="artistItem" href="https://twitter.com/psymeeme">
+                    <img height="32px" src="/svg/eagle.svg" alt="Goldbullet"/>
+                    <div class="artistInfo"><span class="artistName">Psymee</span><span>@psymeeme</span></div>
+                    </a>
+                    <a class="artistItem" href="https://twitter.com/Eiolle99">
+                    <img height="32px" src="/svg/infinity.svg" alt="Octavio"/>
+                    <div class="artistInfo"><span class="artistName">Eiolle</span><span>@Eiolle99</span></div>
+                    </a>
+                    <a class="artistItem" href="https://twitter.com/chloesenzai">
+                    <img height="32px" src="/svg/anger.svg" alt="Ruze"/>
+                    <div class="artistInfo"><span class="artistName">Chloe Senzai</span><span>@chloesenzai</span></div>
+                </a>
+                <a class="artistItem" href="https://twitter.com/2yanko_rii">
+                    <img height="32px" src="/svg/trex.svg" alt="Jurard"/>
+                    <img height="32px" src="/svg/eagle.svg" alt="Goldbullet"/>
+                    <img height="32px" src="/svg/infinity.svg" alt="Octavio"/>
+                    <img height="32px" src="/svg/anger.svg" alt="Ruze"/>
+                    <div class="artistInfo"><span class="artistName">Peachy Z</span><span>@2yanko_rii</span></div>
+                </a>
+                </div>
+                </Fragment>
+            }/>-->
+            <!--<Card main text={<Fragment>
+                <div class="cardHeader" style={{justifyContent: "center"}}>
+                <span class="cardTitle">Made possible by</span>
+                </div>
+                <div class="donorNamesMain">
+                    <div class="donorNamesColumn">
+                    <span>ACDI33</span>
+                    <span>AJ ROBERTS</span>
+                <span>AKEA</span>
+                <span>CMDRCACTUS</span>
+                <span>ENDEEE</span>
+                <span>HAJIME0813</span>
+                <span>HA//VOQ</span>
+                        </div>
+                <div class="donorNamesColumn">
+                    <span>ITS_NOT_ME_JOHN</span>
+                    <span>JEDI LEMON</span>
+                <span>JUSTMOMOCHI</span>
+                <span>K.B. DOODLES</span>
+                <span>MAR</span>
+                <span>MEIMEI ÉCLAT</span>
+                </div>
+                <div class="donorNamesColumn">
+                    <span>NINJA BLUE COSPLAY</span>
+                <span>PEACH MANGO</span>
+                <span>REN</span>
+                <span>ROZEE</span>
+                <span>TELES SHIINA</span>
+                <span>YULIULIYULI</span>
+                <span>ZOMBIEDOG3000</span>
+                </div>
+                </div>
+                <div class="donorNamesSub">
+                    <div class="donorNamesColumn">
+                    <span>75CENTZ</span>
+                <span>CHIKAI</span>
+                <span>ECHO.ONLINE</span>
+                <span>EUVERY</span>
+                <span>GONGOOZLER</span>
+                </div>
+                <div class="donorNamesColumn">
+                    <span>KILAWEIL</span>
+                    <span>LILYH</span>
+                    <span>MARLON</span>
+                    <span>NATE</span>
+                    <span>NEKOYA</span>
+                    </div>
+                    <div class="donorNamesColumn">
+                    <span>PEEPEEPPUPPU</span>
+                    <span>RYE</span>
+                    <span>SEKI</span>
+                    <span>SOMEBODY</span>
+                    <span>YUMIRIX</span>
+                    </div>
+                    </div>
+                    </Fragment>}/>-->
+            <!--<Card main text={<Fragment>
+                <div class="cardHeader" style={{justifyContent: "center"}}>
+                <span class="cardTitle">Credits</span>
+                    </div>
+                    <div class="creditsContainer" style={{paddingBottom: "1rem"}}>
+                <CreditsItem title="Executive Producers" names={["AwHellNao", "acdi33"]} />
+                <CreditsItem title="Project Coordinators" names={["xiaol0ngbob0", "deirmentia"]} />
+                <CreditsItem title="Creative Director" names={["MananaYt"]} />
+                <CreditsItem title="Logistics Coordinator" names={["violet2108"]} />
+                <CreditsItem title="Website and Systems" names={["Madekuji_san"]} />
+                <CreditsItem title="Financials" names={["Akiio_Tako"]} />
+                <CreditsItem title="Event Coordinators" names={["jirusus", "kurizu_joji"]} />
+                </div>
+                </Fragment>}/>-->
+            <!--<GoalTracker/>-->
+            <FAQ />
+            <div id="flasta-2025" class="card prev-flasta">
+                <p>
+                    <img
+                        src="/img/holoflasta-2025-logo.webp"
+                        alt="HoloFlasta Project 2025"
+                    /><br /><br />
+                    <img
+                        id="mainPhoto"
+                        src="/img/2025-flasta-final.webp"
+                        alt="Photo of 2025 HoloFlasta"
+                    />
+                    <br /><strong>Campaign Ended on October 5, 2025.</strong><br
+                    />
+                    HoloPro Fans PH was responsible for organizing the <strong
+                        >HoloFlasta 2025 Project</strong
+                    > in collaboration with PH Starlights as well as the donations
+                    of the community, which produced four flower stands dedicated
+                    to Jurard T Rexford, Goldbullet, Octavio, Crimson Ruze for Cosplay
+                    Mania 2025!<br />
+                    <br />
+                    <MainButton
+                        link="https://flasta2025.holoprofansph.org"
+                        text="Check it out!"
+                    />
+                </p>
+                <!--<img id="flasta-2025-bg" src="/img/2025-flasta-bg.webp" alt="HoloFlasta 2025 BG"/>-->
+            </div>
+            <div id="flasta-2024" class="card prev-flasta">
+                <p>
+                    <img
+                        src="/img/2024-flasta-logo.webp"
+                        alt="HoloFlasta Project 2024"
+                    /><br /><br />
+                    <img
+                        id="mainPhoto"
+                        src="/img/2024-flasta.webp"
+                        alt="Photo of 2024 HoloFlasta"
+                    />
+                    <br /><strong>Campaign Ended on October 6, 2024.</strong><br
+                    />
+                    HoloPro Fans PH was responsible for organizing the <strong
+                        >HoloFlasta 2024 Project</strong
+                    > in collaboration with other local hololive and HOLOSTARS community
+                    members as well as the donations of the community, which produced
+                    two flower stands dedicated to Anya Melfissa, Jurard T. Rexford,
+                    Octavio, and Vestia Zeta for Cosplay Mania 2024!<br />
+                </p>
+                <img
+                    id="flasta-2024-bg"
+                    src="/img/2024-flasta-bg.webp"
+                    alt="HoloFlasta 2024 BG"
+                />
+            </div>
+            <!--<ProjectsList/>-->
+        </div>
+    </div>
+</BaseLayout>

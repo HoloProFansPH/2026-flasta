@@ -1,0 +1,13 @@
+---
+interface Props {
+    link: string;
+    img?: string;
+    text?: string;
+    imgAlt?: string;
+}
+const { link = "https://example.com", img, text, imgAlt } = Astro.props;
+---
+<a class="mainButton" href={link} target="_blank">
+    {img && <img height="100%" src={`/svg/${img}`} alt={imgAlt}/>}
+    <span>{text}</span>
+</a>
