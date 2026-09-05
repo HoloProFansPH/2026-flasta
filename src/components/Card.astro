@@ -1,0 +1,11 @@
+---
+interface Props {
+    id?: string;
+    main?: boolean;
+    style?: any;
+}
+const { id, main, style } = Astro.props;
+---
+<div id={id} class={main ? "card mainCard" : "card"} style={style}>
+    <slot />
+</div>

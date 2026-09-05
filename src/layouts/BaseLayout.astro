@@ -1,24 +1,89 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
 ---
+
 <html lang="en">
     <head>
+        <!--
+
+                     88              88           88  88
+                     88              88           ""  88
+                     88              88               88
+         ,adPPYba,   88,dPPYba,      88,dPPYba,   88  88
+        a8"     "8a  88P'    "8a     88P'    "8a  88  88
+        8b       d8  88       88     88       88  88  ""
+        "8a,   ,a8"  88       88     88       88  88  aa
+         `"YbbdP"'   88       88     88       88  88  88
+
+        holoprofansph.org
+        @HoloProFansPH
+
+        -->
         <meta charset="utf-8" />
-        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/favicon-96x96.png"
+            sizes="96x96"
+        />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
         <meta name="apple-mobile-web-app-title" content="HoloFlasta" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+        />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>Coming soon...</title>
+        <title>HoloFlasta Project 2026</title>
+        <meta name="theme-color" content="#33346E" />
+        <meta property="og:title" content="HoloFlasta Project 2026" />
+        <meta
+            property="og:description"
+            content="A crowdfunding campaign that aims to put flower stands, illustrations, sintra boards, and other decorations to celebrate the members of hololive production attending Cosplay Mania 2026 in the Philippines."
+        />
+        <meta
+            property="og:image"
+            content="https://flasta.holoprofansph.org/opengraph-new-logo.png"
+        />
+        <meta property="og:url" content="https://flasta.holoprofansph.org" />
+        <meta name="twitter:title" content="HoloFlasta Project 2026" />
+        <meta
+            name="twitter:description"
+            content="A crowdfunding campaign that aims to put flower stands, illustrations, sintra boards, and other decorations to celebrate the members of hololive production attending Cosplay Mania 2026 in the Philippines."
+        />
+        <meta
+            name="twitter:image"
+            content="https://flasta.holoprofansph.org/opengraph-new-logo.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@HoloProFansPH" />
+        <meta name="twitter:creator" content="@HoloProFansPH" />
     </head>
     <body>
-    <div id="root">
-        <div id="bodyDiv">
-            <slot />
+        <div id="root">
+            <div id="bodyDiv">
+                <slot />
+                <Footer />
+            </div>
         </div>
-    </div>
+        <!-- <img
+            id="bgClouds"
+            src="/img/bg-clouds.webp"
+            alt="background element clouds"
+        />
+        <img
+            id="bgCity"
+            src="/img/bg-city.webp"
+            alt="background element city"
+        /> -->
+        <img id="bg" src="/img/flasta-bg.webp" alt="background" />
     </body>
 </html>

@@ -1,71 +1,35 @@
 @font-face {
-    font-family: 'Tropikal';
-    src: url('Tropikal-Bold.woff2') format('woff2');
+    font-family: "Genesys";
+    src: url("Genesys.woff2") format("woff2");
+    font-style: normal;
     font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+    text-rendering: optimizeLegibility;
 }
 
+/* Webfont: Malm-Regular */
 @font-face {
-    font-family: 'LT Museum';
-    src: url('LTMuseum-BoldItalic.woff2') format('woff2');
+    font-family: "Malm";
+    src: url("Malm-Regular.eot"); /* IE9 Compat Modes */
+    src:
+        url("Malm-Regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("Malm-Regular.woff") format("woff"),
+        /* Modern Browsers */ url("Malm-Regular.woff2") format("woff2"),
+        /* Modern Browsers */ url("Malm-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Malm-Bold */
+@font-face {
+    font-family: "Malm";
+    src: url("Malm-Bold.eot"); /* IE9 Compat Modes */
+    src:
+        url("Malm-Bold.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("Malm-Bold.woff") format("woff"),
+        /* Modern Browsers */ url("Malm-Bold.woff2") format("woff2"),
+        /* Modern Browsers */ url("Malm-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
+    font-style: normal;
     font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'LT Museum';
-    src: url('LTMuseum-BlackItalic.woff2') format('woff2');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'LT Museum';
-    src: url('LTMuseum-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'LT Museum';
-    src: url('LTMuseum-Black.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'LT Museum';
-    src: url('LTMuseum-LightItalic.woff2') format('woff2');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'LT Museum';
-    src: url('LTMuseum-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'LT Museum Med';
-    src: url('LTMuseum-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'LT Museum Med';
-    src: url('LTMuseum-MediumItalic.woff2') format('woff2');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
+    text-rendering: optimizeLegibility;
 }
