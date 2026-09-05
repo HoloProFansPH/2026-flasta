@@ -9,7 +9,7 @@
     font-weight: 400;
 }
 html {
-    background: url("img/flasta-bg-2.webp") no-repeat center center fixed;
+    background: url("/img/flasta-bg-2.webp") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
