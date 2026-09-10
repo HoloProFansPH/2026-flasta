@@ -5,6 +5,7 @@ import MainButton from "../components/MainButton.astro";
 import ButtonWithModal from "../components/ButtonWithModal.astro";
 import FAQ from "../components/FAQ.astro";
 import HomeDescription from "../components/HomeDescription.astro";
+import GoalTracker from "../components/GoalTracker.svelte";
 ---
 
 <BaseLayout>
@@ -152,7 +153,7 @@ import HomeDescription from "../components/HomeDescription.astro";
                 <CreditsItem title="Event Coordinators" names={["jirusus", "kurizu_joji"]} />
                 </div>
                 </Fragment>}/>-->
-            <!--<GoalTracker/>-->
+            <GoalTracker client:load />
             <FAQ />
             <div id="flasta-2025" class="card prev-flasta">
                 <p>
