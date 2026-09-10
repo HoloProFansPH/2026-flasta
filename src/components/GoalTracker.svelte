@@ -88,7 +88,7 @@
     <div class="tableFlex">
         <GoalItem
             goalName="Base Goal"
-            goalDescription="Four flower stands with 11 chibi standees attached"
+            goalDescription="Three flower stands with 11 chibi standees attached"
             goalAmount="PHP 30,500 ~USD 534"
         />
         <!-- <GoalItem
