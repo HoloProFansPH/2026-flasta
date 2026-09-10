@@ -72,8 +72,8 @@
             style="width: {currentGoalPercentage}%"
         ></div>
     </div>
-    <!-- <span id="goalNameMobile">In Progress: <i>{currentGoalName}</i></span> -->
-    <span id="goalNameMobile">Completed: <i>Stretch Goal</i></span>
+    <span id="goalNameMobile">In Progress: <i>{currentGoalName}</i></span>
+    <!-- <span id="goalNameMobile">Completed: <i>Stretch Goal</i></span> -->
     <div class="goalMeterData">
         <span><i class="fa fa-clock"></i>{timerString}</span>
         <span
