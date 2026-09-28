@@ -1,0 +1,45 @@
+---
+import Card from "./Card.astro";
+import ArtistItem from "./ArtistItem.astro";
+---
+
+<Card main>
+    <div class="cardHeader" style="justify-content: center;">
+        <span class="cardTitle">Artists</span>
+    </div>
+    <div class="artistList">
+        <ArtistItem
+            icons={[{ iconsName: "squirrel", iconsAlt: "Risu" }]}
+            artistName="bulbaasaur"
+            artistTag="bulbaasaurs"
+        />
+        <ArtistItem
+            icons={[
+                { iconsName: "peach", iconsAlt: "Nene" },
+                { iconsName: "dumpling", iconsAlt: "Nene" },
+            ]}
+            artistName="yanamicos"
+            artistTag="yanami_cos"
+        />
+        <ArtistItem
+            icons={[{ iconsName: "trex", iconsAlt: "Jurard" }]}
+            artistName="Ritza Wine"
+            artistTag="Mr_R1tZ_21"
+        />
+        <ArtistItem
+            icons={[{ iconsName: "infinity", iconsAlt: "Octavio" }]}
+            artistName="yomigummies"
+            artistTag="yomigummies"
+        />
+        <ArtistItem
+            icons={[{ iconsName: "infinity", iconsAlt: "Octavio" }]}
+            artistName="Sakuraabelle"
+            artistTag="Sakuraabelle"
+        />
+        <ArtistItem
+            icons={[{ iconsName: "lowbat", iconsAlt: "Flayon" }]}
+            artistName="kimeyngo"
+            artistTag="kimeyngo"
+        />
+    </div>
+</Card>
