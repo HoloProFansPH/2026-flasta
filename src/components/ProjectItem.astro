@@ -1,0 +1,18 @@
+---
+interface Props {
+    link: string;
+    title: string;
+    description?: string;
+}
+const { link, title, description } = Astro.props;
+---
+
+<a class="projectItem" href={link} target="_blank">
+    <div class="projectItemText">
+        <b>
+            <span>{title}</span>
+        </b>
+        <span>{description}</span>
+    </div>
+    <span class="material-symbols-outlined">open_in_new</span>
+</a>
