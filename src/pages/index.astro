@@ -8,6 +8,7 @@ import HomeDescription from "../components/HomeDescription.astro";
 import GoalTracker from "../components/GoalTracker.svelte";
 import ArtistsList from "../components/ArtistsList.astro";
 import ProjectsList from "../components/ProjectsList.astro";
+import Donors from "../components/Donors.astro";
 ---
 
 <BaseLayout>
@@ -44,15 +45,16 @@ import ProjectsList from "../components/ProjectsList.astro";
                 <br/><br/>
                 </p>
             </Card>-->
-            <div class="buttonRow">
-                <!--<MainButton link="https://forms.gle/bEHjHFqBSTtTAvY6A" img="art.svg" text="Contribute Artworks"/>-->
-                <MainButton
+            <!-- <div class="buttonRow"> -->
+            <!--<MainButton link="https://forms.gle/bEHjHFqBSTtTAvY6A" img="art.svg" text="Contribute Artworks"/>-->
+            <!-- <MainButton
                     link="https://forms.gle/5yNddAVcjRPXaQ9e8"
                     img="ph.svg"
                     text="Donate Locally (PH)"
                 />
                 <ButtonWithModal />
             </div>
+             -->
             <ArtistsList />
             <!--<Card main text={
                 <Fragment>
@@ -86,62 +88,7 @@ import ProjectsList from "../components/ProjectsList.astro";
                 </div>
                 </Fragment>
             }/>-->
-            <!--<Card main text={<Fragment>
-                <div class="cardHeader" style={{justifyContent: "center"}}>
-                <span class="cardTitle">Made possible by</span>
-                </div>
-                <div class="donorNamesMain">
-                    <div class="donorNamesColumn">
-                    <span>ACDI33</span>
-                    <span>AJ ROBERTS</span>
-                <span>AKEA</span>
-                <span>CMDRCACTUS</span>
-                <span>ENDEEE</span>
-                <span>HAJIME0813</span>
-                <span>HA//VOQ</span>
-                        </div>
-                <div class="donorNamesColumn">
-                    <span>ITS_NOT_ME_JOHN</span>
-                    <span>JEDI LEMON</span>
-                <span>JUSTMOMOCHI</span>
-                <span>K.B. DOODLES</span>
-                <span>MAR</span>
-                <span>MEIMEI ÉCLAT</span>
-                </div>
-                <div class="donorNamesColumn">
-                    <span>NINJA BLUE COSPLAY</span>
-                <span>PEACH MANGO</span>
-                <span>REN</span>
-                <span>ROZEE</span>
-                <span>TELES SHIINA</span>
-                <span>YULIULIYULI</span>
-                <span>ZOMBIEDOG3000</span>
-                </div>
-                </div>
-                <div class="donorNamesSub">
-                    <div class="donorNamesColumn">
-                    <span>75CENTZ</span>
-                <span>CHIKAI</span>
-                <span>ECHO.ONLINE</span>
-                <span>EUVERY</span>
-                <span>GONGOOZLER</span>
-                </div>
-                <div class="donorNamesColumn">
-                    <span>KILAWEIL</span>
-                    <span>LILYH</span>
-                    <span>MARLON</span>
-                    <span>NATE</span>
-                    <span>NEKOYA</span>
-                    </div>
-                    <div class="donorNamesColumn">
-                    <span>PEEPEEPPUPPU</span>
-                    <span>RYE</span>
-                    <span>SEKI</span>
-                    <span>SOMEBODY</span>
-                    <span>YUMIRIX</span>
-                    </div>
-                    </div>
-                    </Fragment>}/>-->
+            <Donors />
             <!--<Card main text={<Fragment>
                 <div class="cardHeader" style={{justifyContent: "center"}}>
                 <span class="cardTitle">Credits</span>
